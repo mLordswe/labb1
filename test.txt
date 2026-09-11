@@ -1,0 +1,5 @@
+Grundavgift: Alltid $49\text{ kr}$.
+Inkluderad vikt: $5\text{ kg}$ om medlem,
+ annars $2\text{ kg}$.
+ Viktavgift: $\max(0, \text{vikt} - \text{inkluderad\_vikt}) \times 10\text{ kr/kg}$.
+ Tunggodstillägg: $\max(0, \text{vikt} - 20) \times 30\text{ kr/kg}$ (ordinarie viktavgift fortsätter löpa parallellt).Försäkring: $0{,}01 \times \text{varuvärde}$ om försäkring är vald, annars $0\text{ kr}$.
