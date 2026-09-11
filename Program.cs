@@ -87,21 +87,21 @@ internal class Program
     {
         Package packageInfo = new Package();
         Console.Clear();
-        Console.WriteLine("Avsändare: ");
+        Console.Write("Avsändare: ");
         packageInfo.Name = Console.ReadLine()!;
         Console.Clear();
-        Console.WriteLine("Vikt: ");
+        Console.Write("Vikt: ");
         packageInfo.Weight = decimal.Parse(Console.ReadLine()!);
         Console.Clear();
-        Console.WriteLine("Värde: ");
+        Console.Write("Värde: ");
         packageInfo.Value = int.Parse(Console.ReadLine()!);
         Console.Clear();
-        Console.WriteLine("Är du medlem?: ");
+        Console.Write("Är du medlem?: ");
         Console.Clear();
-        System.Console.WriteLine("Är du medlem?: ");
+        System.Console.Write("Är du medlem?: ");
         packageInfo.IsMember = ConsoleOption();
         Console.Clear();
-        Console.WriteLine("Är paketet försäkrat?: ");
+        Console.Write("Är paketet försäkrat?: ");
         packageInfo.IsInsured = ConsoleOption();
 
         return packageInfo;
@@ -112,16 +112,16 @@ internal class Program
         System.Console.WriteLine("-----------------------------");
         System.Console.WriteLine($"Avsändare: {sender}");
         System.Console.WriteLine($"Vikt: {weight}");
-        System.Console.WriteLine($"Innehållets värde: {Value}");
+        System.Console.WriteLine($"Innehållets värde: {Value} kr");
         System.Console.WriteLine("Medlem: " + (IsMember ? "Ja" : "Nej")); // IsMember ? 5.0m : 2.0m
         System.Console.WriteLine("Försäkring: " + (IsInsured ? "Ja" : "Nej"));
         System.Console.WriteLine();
         System.Console.WriteLine("Grundavgift:          49 kr");
-        System.Console.WriteLine($"Viktavgift:          {weightFee}");
-        System.Console.WriteLine($"Tunggodstillägg:      {heavyFee}");
-        System.Console.WriteLine($"Försäkringsavgift:    {insuranceFee}");
+        System.Console.WriteLine($"Viktavgift:          {weightFee} kr");
+        System.Console.WriteLine($"Tunggodstillägg:      {heavyFee} kr");
+        System.Console.WriteLine($"Försäkringsavgift:    {insuranceFee} kr");
         System.Console.WriteLine("-----------------------------");
-        System.Console.WriteLine($"Totalt att betala:   {totalCost}");
+        System.Console.WriteLine($"Totalt att betala:   {totalCost} kr");
     }
     static decimal CalculatePackage(Package p)
     {
